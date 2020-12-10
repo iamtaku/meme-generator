@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Header from "./Header";
+import MemeGenerator from "./MemeGenerator";
 
 class App extends React.Component {
   constructor() {
@@ -8,7 +9,13 @@ class App extends React.Component {
   }
 
   render() {
-    return <h1>Hello</h1>;
+    return (
+      <div>
+        <h1>Hello</h1>
+        <Header />
+        <MemeGenerator />
+      </div>
+    );
   }
 }
 
